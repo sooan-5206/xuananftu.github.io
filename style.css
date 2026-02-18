@@ -1,10 +1,9 @@
 :root {
-  --primary: #ff4d8d;      /* hồng chủ đạo */
+  --primary: #ff4d8d;
   --primary-light: #ff85b3;
   --bg-light: #fdf2f7;
   --text-dark: #333;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -23,116 +22,7 @@ body {
   line-height: 1.6;
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.hero img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 4px solid white;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 32px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.95;
-}
-
-/* SECTION */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section h2 {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: var(--primary);
-}
-
-/* PROJECTS */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.project-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #777;
-}
-
-/* ===== EDUCATION / ACCORDION ===== */
-
-.education {
-  margin-top: 40px;
-}
-
-details {
-  background: white;
-  border-radius: 14px;
-  padding: 18px 22px;
-  margin-bottom: 15px;
-  border-left: 5px solid var(--primary);
-}
-
-summary {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--primary);
-}
-
-details p {
-  margin-top: 10px;
-  color: #444;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.about {
-  background: white;
-  border-radius: 16px;
-  padding: 40px;
-  margin-top: -40px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -167,28 +57,53 @@ details p {
   cursor: pointer;
 }
 
-/* ===== SKILLS ===== */
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-}
-
-.skill-card {
-  background: white;
-  padding: 25px;
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
   text-align: center;
+  padding: 70px 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+/* SECTION */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ABOUT */
+.about {
+  background: white;
   border-radius: 16px;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(255, 77, 141, 0.15);
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-}
-
-/* ===== TIMELINE ===== */
+/* TIMELINE */
 .timeline {
   border-left: 3px solid var(--primary);
   padding-left: 20px;
@@ -203,60 +118,7 @@ details p {
   color: var(--primary);
 }
 
-/* ===== DARK MODE ===== */
-body.dark {
-  background: #1a0f14;
-  color: #f5dbe6;
-}
-
-body.dark .navbar,
-body.dark .project-card,
-body.dark .skill-card,
-body.dark .about,
-body.dark details {
-  background: #26161f;
-}
-
-body.dark summary,
-body.dark .timeline-item span,
-body.dark section h2 {
-  color: var(--primary-light);
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .navbar ul {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  section {
-    margin: 30px auto;
-  }
-
-  .about {
-    padding: 25px;
-  }
-}
-
-
-
-
-
-
-
-
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fi
