@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <title>Nguyễn Xuân An | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <nav class="navbar">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
   <div class="nav-container">
     <div class="logo">Xuân An</div>
 
-    <!-- Hamburger icon -->
+    <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
@@ -20,27 +23,25 @@
 
     <!-- Menu -->
     <ul class="nav-menu" id="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#education">Học tập</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#projects">Dự án</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li><button id="toggle-theme">🌙</button></li>
     </ul>
   </div>
 </nav>
 
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <img src="assets/avatar.jpg" alt="Ảnh đại diện">
+  <h1>Nguyễn Xuân An</h1>
+  <p>Sinh viên ĐH Ngoại Thương | Kinh tế đối ngoại | Research</p>
+</header>
 
-
-  <!-- HERO -->
-  <header class="hero" id="home">
-    <img src="assets/avatar.jpg" alt="Ảnh đại diện">
-    <h1>Nguyễn Xuân An</h1>
-    <p>Sinh viên trường Đại học Ngoại Thương | Chuyên ngành Kinh tế đối ngoại | Web</p>
-  </header>
-
-  <!-- ABOUT -->
-  <section class="about">
+<!-- ===== ABOUT ===== -->
+<section class="about fade-in">
   <div class="container">
     <h2>Giới thiệu</h2>
     <p>
@@ -49,66 +50,54 @@
   </div>
 </section>
 
-<section class="education fade-in" id="education">
+<!-- ===== EDUCATION ===== -->
+<section class="education fade-in">
   <div class="container">
     <h2>Học tập</h2>
 
     <div class="timeline">
       <div class="timeline-item">
         <span>2024 – nay</span>
-        <p>Trường Đại học Ngoại Thương – Chuyên ngành Kinh tế đối ngoại</p>
+        <p>Đại học Ngoại Thương – Kinh tế đối ngoại</p>
       </div>
       <div class="timeline-item">
-        <span>2021 - 2024</span>
-        <p>Trường Trung học phổ thông Chuyên Khoa học Xã hội và Nhân văn - Chuyên Văn</p>
-      </div>
-      <div class="timeline-item">
-        <span>2017 – 2021</span>
-        <p>Trường Trung học cơ sở Nghĩa Tân - Lớp A4</p>
+        <span>2021 – 2024</span>
+        <p>THPT Chuyên KHXH&NV – Chuyên Văn</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="skills fade-in" id="skills">
+<!-- ===== SKILLS ===== -->
+<section class="skills fade-in">
   <div class="container">
     <h2>Kỹ năng</h2>
-
     <div class="skill-grid">
-      <div class="skill-card">Chạy lượng Nghiên cứu khoa học</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript (cơ bản)</div>
-      <div class="skill-card">Nghiên cứu</div>
-      <div class="skill-card">Phân tích dữ liệu</div>
+      <div class="skill-card">Research</div>
+      <div class="skill-card">Data Analysis</div>
+      <div class="skill-card">HTML / CSS</div>
+      <div class="skill-card">SPSS / PLS-SEM</div>
     </div>
   </div>
 </section>
 
-
-  <!-- PROJECTS -->
-  <section class="projects fade-in" id="projects">
+<!-- ===== PROJECTS (DẪN SANG TRANG RIÊNG) ===== -->
+<section class="projects fade-in">
   <div class="container">
     <h2>Dự án</h2>
+
     <div class="project-card">
-      <img src="assets/project1.png" alt="Dự án 1">
-      <h3>Portfolio cá nhân</h3>
-      <p>Website giới thiệu bản thân bằng HTML, CSS.</p>
+      <img src="assets/project1.png">
+      <h3>Portfolio Website</h3>
+      <p>Website cá nhân bằng HTML, CSS, JS</p>
+      <a href="projects.html">Xem chi tiết →</a>
     </div>
   </div>
 </section>
 
-<script src="script.js"></script>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Nguyễn Xuân An</p>
-  </footer>
+<footer>
+  © 2026 Nguyễn Xuân An
+</footer>
 
 </body>
 </html>
-
-
-
-
-
-
