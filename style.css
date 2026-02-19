@@ -260,19 +260,6 @@ body {
   display: flex;
 }
 
-/* ITEM giống dòng year + nội dung */
-
-.vol-year {
-  min-width: 80px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.vol-text {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #ddd;
-}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -388,3 +375,4 @@ body {
   }
 
 }
+
