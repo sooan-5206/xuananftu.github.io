@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /* ===== HAMBURGER ===== */
   const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById(".menu");
+  const navMenu = document.getElementById("nav-menu");
 
   if (hamburger && navMenu) {
     hamburger.addEventListener("click", () => {
@@ -91,4 +91,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 })
+
 
