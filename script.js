@@ -61,21 +61,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// EXPERIENCE TAB
-const expTabs = document.querySelectorAll(".exp-tab");
-const expGroups = document.querySelectorAll(".exp-group");
+  /* ===== EXPERIENCE TAB FILTER ===== */
+  const expTabs = document.querySelectorAll(".exp-tab");
+  const expGroups = document.querySelectorAll(".exp-group");
 
-expTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
+  if (expTabs.length > 0) {
 
-    expTabs.forEach(t => t.classList.remove("active"));
-    expGroups.forEach(g => g.classList.remove("active"));
+    expTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
 
-    tab.classList.add("active");
+        expTabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
 
-    const category = tab.getAttribute("data-category");
-    document
-      .querySelector(`.exp-group[data-category="${category}"]`)
-      .classList.add("active");
-  });
-});
+        const category = tab.getAttribute("data-category");
+
+        expGroups.forEach(group => {
+          if (group.getAttribute("data-category") === category) {
+            group.classList.add("active");
+          } else {
+            group.classList.remove("active");
+          }
+        });
+
+      });
+    });
+
+    // Default show first tab
+    expTabs[0].click();
+  }
+
+})
