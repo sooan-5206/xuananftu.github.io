@@ -42,21 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-});
+  /* ===== VOLUNTEER EVENT ACCORDION ===== */
+  const volItems = document.querySelectorAll(".vol-item");
 
-const volItems = document.querySelectorAll(".vol-item");
+  volItems.forEach(item => {
+    item.addEventListener("click", function () {
 
-volItems.forEach(item => {
-  item.addEventListener("click", function () {
+      if (this.classList.contains("active")) {
+        this.classList.remove("active");
+        return;
+      }
 
-    if (this.classList.contains("active")) {
-      this.classList.remove("active");
-      return;
-    }
+      volItems.forEach(i => i.classList.remove("active"));
+      this.classList.add("active");
 
-    volItems.forEach(i => i.classList.remove("active"));
-    this.classList.add("active");
-
+    });
   });
-});
 
+});
