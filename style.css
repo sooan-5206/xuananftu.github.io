@@ -16,7 +16,7 @@ body {
 /* =========================
    NAVBAR
 ========================= */
-.main-nav {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,19 +28,13 @@ body {
   z-index: 1000;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.menu {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 35px;
 }
 
-.menu a {
+.nav-links a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
@@ -48,14 +42,10 @@ body {
   transition: 0.3s;
 }
 
-.menu a:hover {
+.nav-links a:hover {
   opacity: 0.6;
 }
 
-.menu a.active {
-  border-bottom: 2px solid #222;
-  padding-bottom: 4px;
-}
 
 /* =========================
    SPLIT LAYOUT (INDEX)
@@ -200,3 +190,4 @@ footer {
   }
 
 }
+
