@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
   /* ===== HAMBURGER ===== */
   const hamburger = document.getElementById("hamburger");
@@ -11,31 +11,29 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   /* ===== VOLUNTEER TAB FILTER ===== */
-  const tabs = document.querySelectorAll(".vol-tab");
-  const groups = document.querySelectorAll(".vol-group");
+  const volTabs = document.querySelectorAll(".vol-tab");
+  const volGroups = document.querySelectorAll(".vol-group");
 
-  if (tabs.length > 0) {
-
-    tabs.forEach(tab => {
+  if (volTabs.length > 0) {
+    volTabs.forEach(tab => {
       tab.addEventListener("click", () => {
 
-        tabs.forEach(t => t.classList.remove("active"));
+        volTabs.forEach(t => t.classList.remove("active"));
+        volGroups.forEach(g => g.classList.remove("active"));
+
         tab.classList.add("active");
 
         const category = tab.getAttribute("data-category");
 
-        groups.forEach(group => {
-          if (group.getAttribute("data-category") === category) {
-            group.classList.add("active");
-          } else {
-            group.classList.remove("active");
-          }
-        });
+        const target = document.querySelector(
+          `.vol-group[data-category="${category}"]`
+        );
 
+        if (target) target.classList.add("active");
       });
     });
 
-    tabs[0].click(); // default tab
+    volTabs[0].click();
   }
 
   /* ===== VOLUNTEER ACCORDION ===== */
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       volItems.forEach(i => i.classList.remove("active"));
       this.classList.add("active");
-
     });
   });
 
@@ -60,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const expGroups = document.querySelectorAll(".exp-group");
 
   if (expTabs.length > 0) {
-
     expTabs.forEach(tab => {
       tab.addEventListener("click", () => {
 
@@ -71,14 +67,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const category = tab.getAttribute("data-category");
 
-        document
-          .querySelector(`.exp-group[data-category="${category}"]`)
-          .classList.add("active");
+        const target = document.querySelector(
+          `.exp-group[data-category="${category}"]`
+        );
 
+        if (target) target.classList.add("active");
       });
     });
 
-    expTabs[0].click(); // default tab
+    expTabs[0].click();
   }
 
 });
