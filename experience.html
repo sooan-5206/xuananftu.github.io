@@ -4,48 +4,110 @@
   <meta charset="UTF-8">
   <title>Xuân An | Experience</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
-<!-- ===== NAVBAR (đồng bộ với index) ===== -->
 <nav class="main-nav">
   <div class="logo">XUÂN AN</div>
 
   <ul class="menu">
     <li><a href="index.html">ABOUT</a></li>
-    <li><a href="experience.html">WORK/STUDY</a></li>
+    <li><a href="experience.html" class="active">WORK/STUDY</a></li>
     <li><a href="research.html">RESEARCH</a></li>
     <li><a href="volunteer.html">VOLUNTEER</a></li>
     <li><a href="contact.html">CONTACT</a></li>
   </ul>
 </nav>
 
-<!-- ===== CONTENT ===== -->
-<section class="subpage">
-  <div class="sub-container">
+<section class="experience-page">
 
-    <h1>WORK / STUDY</h1>
+  <div class="experience-wrapper">
 
-    <div class="sub-divider"></div>
+    <h1 class="experience-title">WORK / STUDY</h1>
 
-    <div class="sub-content">
+    <!-- TAB MENU -->
+    <div class="experience-menu">
+      <button class="exp-tab active" data-category="work">Công việc</button>
+      <button class="exp-tab" data-category="uni">Đại học</button>
+      <button class="exp-tab" data-category="high">Cấp 3</button>
+      <button class="exp-tab" data-category="secondary">Cấp 2 & Cấp 1</button>
+    </div>
 
-      <div class="sub-item">
-        <span>2025 – nay</span>
-        <p>Trợ lý nghiên cứu – Phân tích dữ liệu, chạy mô hình</p>
+    <div class="exp-divider"></div>
+
+    <!-- CONTENT -->
+    <div class="exp-content">
+
+      <!-- WORK -->
+      <div class="exp-group active" data-category="work">
+
+        <div class="exp-item">
+          <div class="exp-year">Hiện tại chưa có</div>
+          <div class="exp-text">
+            
+          </div>
+        </div>
+
       </div>
 
-      <div class="sub-item">
-        <span>2024</span>
-        <p>Tham gia dự án nghiên cứu sinh viên FTU</p>
+
+      <!-- UNIVERSITY -->
+      <div class="exp-group" data-category="uni">
+
+        <div class="exp-item">
+          <div class="exp-year">2024 – 2028</div>
+          <div class="exp-text">
+            Chuyên ngành Kinh tế đối ngoại - Trường Đại học Ngoại Thương
+            Khóa 63 - Lớp: Anh 02 - IBE.S
+          </div>
+        </div>
+
       </div>
+
+
+      <!-- HIGH SCHOOL -->
+      <div class="exp-group" data-category="high">
+
+        <div class="exp-item">
+          <div class="exp-year">2022 - 2025</div>
+          <div class="exp-text">
+            Trường Trung học phổ thông Chuyên Khoa học xã hội và nhân văn
+            Lớp: Chuyên văn 1 - Khóa 2
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- SECONDARY -->
+      <div class="exp-group" data-category="secondary">
+
+        <div class="exp-item">
+          <div class="exp-year">2018 – 2022</div>
+          <div class="exp-text">
+            Trường Trung học cơ sở Nghĩa Tân
+            Lớp A4
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-year">2013 – 2018</div>
+          <div class="exp-text">
+            Trường Tiểu học Nghĩa Tân
+            Lớp P
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
 
   </div>
+
 </section>
 
 </body>
 </html>
-
