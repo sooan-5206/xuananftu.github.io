@@ -491,3 +491,13 @@ body {
 .exp-images img:hover {
   transform: scale(1.03);
 }
+
+@media (max-width: 768px) {
+
+  .exp-images {
+    margin-left: 0;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+}
