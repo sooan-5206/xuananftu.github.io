@@ -701,3 +701,19 @@ body {
 .cert-close:hover {
   transform: rotate(90deg);
 }
+
+.achievement-list {
+  margin-top: 20px;
+  margin-left: 135px;
+  color: #aaa;
+}
+
+.achievement-list li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.achievement-list li:hover {
+  color: #fff;
+}
