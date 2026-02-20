@@ -566,3 +566,80 @@ body {
   color: #777;
   font-size: 14px;
 }
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+  background: #111;
+  min-height: 100vh;
+  padding: 180px 0 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background: #f4f4f4;
+  width: 85%;
+  max-width: 1100px;
+  border-radius: 40px;
+  padding: 80px 100px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 80px;
+  color: #111;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CONTACT ITEM STRUCTURE */
+
+.contact-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-label {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.contact-username {
+  font-size: 15px;
+  color: #333;
+}
+
+.contact-link {
+  font-size: 14px;
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #000;
+}
