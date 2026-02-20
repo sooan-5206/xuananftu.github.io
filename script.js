@@ -106,3 +106,23 @@ if (certModal) {
     }
   });
 }
+
+/* ===== ABOUT TAB SWITCH ===== */
+
+const aboutTabs = document.querySelectorAll(".about-tab");
+const aboutGroups = document.querySelectorAll(".about-group");
+
+if (aboutTabs.length > 0) {
+  aboutTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+      aboutTabs.forEach(t => t.classList.remove("active"));
+      aboutGroups.forEach(g => g.classList.remove("active"));
+
+      tab.classList.add("active");
+
+      const target = document.getElementById(tab.dataset.tab);
+      if (target) target.classList.add("active");
+    });
+  });
+}
