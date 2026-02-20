@@ -801,9 +801,6 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: right;           /* chữ canh phải */
-  backdrop-filter: blur(6px);
-  padding: 20px;
-  border-radius: 14px;
 }
 
 .about-tab {
@@ -876,6 +873,7 @@ body {
   }
 
 }
+
 
 
 
