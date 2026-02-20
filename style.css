@@ -468,3 +468,26 @@ body {
   line-height: 1.6;
 }
 
+/* ===== EXPERIENCE PREMIUM IMAGE GRID ===== */
+
+.exp-images {
+  margin-left: 135px;   /* 110px year + 25px gap */
+  margin-top: 25px;
+  width: calc(100% - 135px);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.exp-images img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.exp-images img:hover {
+  transform: scale(1.03);
+}
