@@ -107,24 +107,25 @@ if (certModal) {
   });
 }
 
-/* ===== ABOUT TAB SWITCH ===== */
+  /* ===== ABOUT TAB SWITCH ===== */
 
-const aboutTabs = document.querySelectorAll(".about-tab");
-const aboutContents = document.querySelectorAll(".about-content");
+  const aboutTabs = document.querySelectorAll(".about-tab");
+  const aboutContents = document.querySelectorAll(".about-content");
 
-aboutTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
+  aboutTabs.forEach(tab => {
+   tab.addEventListener("click", () => {
 
-    aboutTabs.forEach(t => t.classList.remove("active"));
-    aboutContents.forEach(c => c.classList.remove("active"));
+     aboutTabs.forEach(t => t.classList.remove("active"));
+     aboutContents.forEach(c => c.classList.remove("active"));
 
-    tab.classList.add("active");
+     tab.classList.add("active");
 
-    const target = tab.getAttribute("data-tab");
+     const target = tab.getAttribute("data-tab");
 
-    document.querySelector(
+     document.querySelector(
       `.about-content[data-content="${target}"]`
-    ).classList.add("active");
+     ).classList.add("active");
 
-  });
-});
+   });
+ });
+
