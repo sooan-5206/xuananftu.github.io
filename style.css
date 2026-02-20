@@ -570,8 +570,8 @@ body {
 /* ===== CONTACT PAGE ===== */
 
 .contact-page {
-  background: #555;
-  color: white;
+  background: #111;
+  color: #555;
   padding: 120px 80px;
   min-height: 100vh;
 }
@@ -763,6 +763,7 @@ body {
     align-self: flex-end;
   }
 }
+
 
 
 
