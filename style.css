@@ -582,6 +582,7 @@ body {
 
 .contact-title {
   font-size: 40px;
+  color: #fff;
   margin-bottom: 60px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -762,6 +763,7 @@ body {
     align-self: flex-end;
   }
 }
+
 
 
 
