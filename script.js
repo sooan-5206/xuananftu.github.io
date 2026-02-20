@@ -110,19 +110,21 @@ if (certModal) {
 /* ===== ABOUT TAB SWITCH ===== */
 
 const aboutTabs = document.querySelectorAll(".about-tab");
-const aboutGroups = document.querySelectorAll(".about-group");
+const aboutContents = document.querySelectorAll(".about-content");
 
-if (aboutTabs.length > 0) {
-  aboutTabs.forEach(tab => {
-    tab.addEventListener("click", () => {
+aboutTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
 
-      aboutTabs.forEach(t => t.classList.remove("active"));
-      aboutGroups.forEach(g => g.classList.remove("active"));
+    aboutTabs.forEach(t => t.classList.remove("active"));
+    aboutContents.forEach(c => c.classList.remove("active"));
 
-      tab.classList.add("active");
+    tab.classList.add("active");
 
-      const target = document.getElementById(tab.dataset.tab);
-      if (target) target.classList.add("active");
-    });
+    const target = tab.getAttribute("data-tab");
+
+    document.querySelector(
+      `.about-content[data-content="${target}"]`
+    ).classList.add("active");
+
   });
-}
+});
